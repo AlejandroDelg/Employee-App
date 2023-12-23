@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Employee } from './employee'; // Importar la clase Employee desde su ubicación correcta
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'frontEndEmployee';
+  public employees: Employee[] = []; // Corregir la declaración de la variable employees
 }
